@@ -13,8 +13,9 @@
 }
 
 header{
-    height:30vh;
+    height:40vh;
     background-image: linear-gradient(rgb(3, 170, 3),rgb(0, 78, 0));
+    
 }
 
 .titulo-site{
@@ -44,6 +45,7 @@ header{
     max-width:72vh;
     border-radius: 5px;
     background-color: rgb(2, 66, 2);
+    
     
 }
 .menu-item{
