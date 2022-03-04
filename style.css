@@ -13,7 +13,6 @@
 }
 
 header{
-    height:40vh;
     background-image: linear-gradient(rgb(3, 170, 3),rgb(0, 78, 0));
     
 }
@@ -40,16 +39,16 @@ header{
 
 .menu{
     margin: auto;
-    padding: 10px;
+    padding: 5px;
     display: block;
-    max-width:72vh;
     border-radius: 5px;
     background-color: rgb(2, 66, 2);
-    
+    text-align: center;
     
 }
 .menu-item{
-    margin: 0px 15px;
+    display: inline-block;
+    margin: 0px 10px;
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -112,13 +111,14 @@ main{
 
 
 
-.imagem-grande{
+.imagem-centro{
     display: block;
     margin: auto;
 }
 
 
 #video{
+    margin-bottom: 25px;
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
@@ -129,8 +129,11 @@ main{
 
 #video >iframe{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 95%;
+    height: 95%;
     border: none;
     
 }
@@ -186,4 +189,46 @@ footer p{
     font-size: 0.80em;
     color: whitesmoke;
     text-align: center;
+}
+
+
+@media (min-width:470px) and (max-width:600px){
+    .titulo-site{
+        font-size: 1.65em;
+    }
+
+    .slogan-site{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 0.90em;
+    }
+
+    .imagem-grande{
+        width: 300px;
+    }
+}
+
+@media (max-width:460px){
+    .titulo-site{
+        font-size: 1.40em;
+    }
+
+    .slogan-site{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 0.90em;
+    }
+
+    .imagem-grande{
+        width: 230px;
+    }
+
+    .menu-item{
+        margin: 0;
+        font-size: 0.80em;
+    }
+
+    .paragrafo-artigo{
+        font-size: 0.95em;
+    }
 }
